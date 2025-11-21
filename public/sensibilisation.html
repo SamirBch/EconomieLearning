@@ -1,118 +1,187 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proposition de stage en IT</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f6f6f6;
-      font-family: Arial, sans-serif;
-      color: #333333;
-    }
-    .container {
-      max-width: 600px;
-      margin: 20px auto;
-      background-color: #ffffff;
-      border-radius: 6px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .header {
-      background-color: #e60028; /* Rouge inspiré de Devoteam */
-      padding: 20px;
-      text-align: left;
-    }
-    .header img {
-      max-height: 48px;
-    }
-    .content {
-      padding: 30px 25px;
-      line-height: 1.6;
-    }
-    .contexte {
-      font-size: 13px;
-      font-style: italic;
-      color: #555555;
-      margin-bottom: 18px;
-      background-color: #fff7f8;
-      padding: 10px 12px;
-      border-left: 4px solid #e60028;
-      border-radius: 4px;
-    }
-    h1 {
-      color: #e60028;
-      font-size: 18px;
-      margin-top: 0;
-    }
-    a.button {
-      display: inline-block;
-      background-color: #e60028;
-      color: #ffffff !important;
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    a.button:hover {
-      background-color: #cc0023;
-    }
-    .footer {
-      background-color: #f0f0f0;
-      padding: 15px 25px;
-      font-size: 12px;
-      color: #666666;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensibilisation au Phishing</title>
+    <style>
+        :root {
+            --primary: #0a4a91;
+            --secondary: #e8f1fb;
+            --accent: #ff9800;
+            --danger: #d9534f;
+            --text-dark: #1a1a1a;
+            --text-light: #555;
+        }
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            margin: 0;
+            background: var(--secondary);
+            color: var(--text-dark);
+        }
+        header {
+            background: linear-gradient(135deg, #053b75, #0a4a91);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+        }
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+        .visual-example {
+            background: #fff7e6;
+            border-left: 5px solid var(--accent);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .visual-example img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        .danger-box {
+            background: #ffecec;
+            border-left: 5px solid var(--danger);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #d9e3ef;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Header avec logo -->
-    <div class="header">
-      <img src="https://datasciencefestival.com/wp-content/uploads/2022/08/devoteam-logo.png" alt="Logo de l’entreprise">
+
+<header>
+    <h1>Sensibilisation au Phishing</h1>
+    <p>Une campagne pédagogique pour comprendre, reconnaître et éviter les attaques en ligne</p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>Une expérience dans le cadre du cours</h2>
+        <p>
+            Si vous êtes arrivé sur cette page, c’est que vous avez probablement cliqué sur un lien qui semblait légitime. Félicitations : vous venez de participer à une <strong>mise en situation de phishing</strong> réalisée dans le cadre du cours de cybersécurité.
+
+              Cette activité est menée dans le cadre de notre formation en 2ᵉ master en informatique, au sein du laboratoire de cybersécurité, sous la supervision de Monsieur Fockedey.
+              Le but de cet exercice était de vous piéger en vous envoyant un faux mail suffisamment crédible pour vous inciter à cliquer, et ainsi analyser combien de personnes seraient susceptibles de tomber dans le piège.
+
+              Cette mise en situation vise avant tout à vous sensibiliser aux risques réels du phishing, une menace particulièrement fréquente et dangereuse. Une analyse et une explication détaillée vous seront fournies par la suite afin de renforcer vos réflexes de sécurité.
+
+              Notre groupe, chargé de concevoir cette simulation, est composé de Samir, Ayoub, Haitam, Loric et Abdelbadi.
+        </p>
+        <p>
+            Aucun risque ici : aucune donnée n’a été enregistrée. Cette page existe uniquement pour vous apprendre à
+            reconnaître les pièges qui, dans un vrai contexte, pourraient avoir des conséquences graves.
+        </p>
     </div>
 
-    <!-- Corps du message -->
-    <div class="content">
-      <!-- Texte du contexte ajouté -->
-      <div class="contexte">
-        Contexte : Lors des recherches sur mon profil, j'ai trouvé mon profil LinkedIn et j'y ai trouvé une annonce de recherche de stage qui date de peu, donc ce qui veut dire que je pourrais encore être intéressé par un stage. Je me fais passer pour une entreprise pour laquelle j'ai un intérêt sur LinkedIn. Mon mail était dans mon CV qui est dans l'offre.
-      </div>
+    <div class="card">
+        <h2>Qu'est-ce que le phishing ?</h2>
+        <p>
+            Le phishing (ou hameçonnage) est une technique utilisée par des cybercriminels pour voler vos informations
+            personnelles en vous incitant à cliquer sur un lien ou à saisir vos identifiants sur une fausse page.
+        </p>
 
-      <h1>Proposition de stage en IT</h1>
-
-      <p>Bonjour Haitam,</p>
-
-      <p>J’espère que vous allez bien.<br>
-      Je me permets de vous contacter car j’ai pris connaissance de votre profil, et je trouve votre parcours en deuxième année de master ainsi que vos compétences en développement particulièrement intéressants.</p>
-
-      <p>Nous proposons actuellement un stage en <strong>IT</strong>, qui, je pense, pourrait très bien correspondre à vos compétences et à vos aspirations.</p>
-
-      <p>Vous pouvez consulter les détails de cette offre et postuler directement via le lien suivant :</p>
-
-      <p><a href="[INSÈRE ICI LE LIEN DE L’OFFRE]" class="button">Voir l’offre de stage (Lien malicieux)</a></p>
-
-      <p>Si cette opportunité correspond à vos attentes, je vous propose que nous organisions un entretien afin d’échanger plus en détail sur le stage et sur votre profil.</p>
-
-      <p>Pourriez-vous me transmettre vos <strong>disponibilités pour la semaine prochaine</strong> afin que nous fixions un créneau qui vous convienne&nbsp;?</p>
-
-      <p>Je reste à votre disposition pour toute question ou information complémentaire.</p>
-
-      <p>Bien cordialement,<br>
-      <strong>John Deridder</strong><br>
-      IT Recruiter<br>
-      Devoteam<br>
-      <a href="mailto:John.Deridder@devoteam.be">John.Deridder@devoteam.be</a></p>
+        <div class="visual-example">
+            <strong>Exemple visuel :</strong>
+            <p>Voici un exemple typique de faux email :</p>
+            <img src="https://www.emarketerz.fr/wp-content/uploads/2024/03/analyse-e-mail-phishing-indices.jpg">
+        </div>
     </div>
 
-    <!-- Pied de page -->
-    <div class="footer">
-      © 2025 Devoteam – Ce message est confidentiel et destiné uniquement à son destinataire.
+    <div class="card">
+        <h2>Les risques associés</h2>
+        <div class="danger-box">
+            <strong>Une attaque réelle pourrait entraîner :</strong>
+            <ul>
+                <li>Vol de mots de passe (messagerie, ENT, réseaux sociaux…)</li>
+                <li>Usurpation d'identité</li>
+                <li>Accès à vos fichiers ou comptes scolaires</li>
+                <li>Arnaques financières</li>
+                <li>Propagation de logiciels malveillants</li>
+            </ul>
+        </div>
     </div>
-  </div>
+
+    <div class="card">
+        <h2>Comment repérer une tentative de phishing ?</h2>
+        <ul>
+            <li><strong>Regarder l’adresse email</strong> de l’expéditeur : souvent approximative ou suspecte.</li>
+            <li><strong>Analyser le lien</strong> avant de cliquer (placer la souris dessus pour voir l’URL réelle).</li>
+            <li><strong>Méfiez-vous des urgences</strong> : "Votre compte sera supprimé dans 24h".</li>
+            <li><strong>Erreurs de grammaire</strong> ou de traduction dans le contenu.</li>
+            <li><strong>Demande d'informations sensibles</strong> non justifiée.</li>
+        </ul>
+
+        <div class="visual-example">
+            <strong>Exemple visuel :</strong>
+            <p>Une fausse page de connexion qui imite un service officiel :</p>
+            <p> => Ici le lien de la page n'est pas un lien officiel !!!!</p>
+            <img src="https://media.kasperskydaily.com/wp-content/uploads/sites/93/2021/05/07134957/office-365-phishing-via-gdocs-office-login.jpg">
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Comment vous protéger facilement ?</h2>
+        <ul>
+            <li>Ne jamais saisir ses identifiants via un lien reçu dans un email.</li>
+            <li>Accéder au site en tapant l’adresse manuellement.</li>
+            <li>Activer l’authentification à deux facteurs sur les comptes importants.</li>
+            <li>Utiliser un gestionnaire de mots de passe (il détecte les faux sites).</li>
+            <li>En cas de doute, demander à un professeur ou un administrateur réseau.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Conclusion</h2>
+        <p>
+            Vous venez de vivre une situation typique. Cette expérience a pour but de vous rendre plus attentifs et
+            autonomes face aux risques numériques. Les cyberattaques ne préviennent pas : plus vous êtes informés,
+            mieux vous vous protégez.
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2025 — Campagne pédagogique contre le phishing
+</footer>
+
 </body>
 </html>

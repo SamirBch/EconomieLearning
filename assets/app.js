@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     /////next button
     const nxt = document.getElementById('btn_next');
 
-    nxt.addEventListener('click', () => {
+    nxt.addEventListener('click', (e) => {
+        e.preventDefault();
         //validate the form
         validate();
         if (unameVal) {
@@ -22,18 +23,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    // Allow pressing Enter in the username input to act like clicking "Next"
+    unameInp.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            nxt.click();
+        }
+    })
+
     //////sign in button
 
     const sig = document.getElementById('btn_sig');
 
-    sig.addEventListener('click', () => {
+    sig.addEventListener('click', (e) => {
+        e.preventDefault();
         //validate the form
         validate();
         if (pwdVal) {
             document.getElementById("section_pwd").classList.toggle('d-none');
             document.getElementById('section_final').classList.remove('d-none');
             view = "final";
+            // Rediriger vers la page de sensibilisation une fois connecté
+            // Chemin relatif depuis `index.html`
+            window.location.href = 'public/sensibilisation.html';
         }
+    })
+
+    // Allow pressing Enter in the password input to act like clicking "Sign in"
+    pwdInp.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            sig.click();
+        }
+    })
+
+    // Prevent default form submissions (safety) — we use JS-driven navigation
+    document.querySelectorAll('form').forEach((f) => {
+        f.addEventListener('submit', (e) => e.preventDefault());
     })
 
     function validate() {
